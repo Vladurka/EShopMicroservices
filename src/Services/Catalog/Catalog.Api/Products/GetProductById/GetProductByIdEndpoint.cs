@@ -14,8 +14,9 @@ namespace Catalog.Api.Products.GetProductById
                 var response = result.Adapt<GetProductByIdResponse>();
                 return Results.Ok(response);
             })
-            .WithName("Get product by id")
+            .WithName("GetProductById")
             .Produces<GetProductsResponse>(StatusCodes.Status200OK)
+            .ProducesProblem(StatusCodes.Status400BadRequest)
             .ProducesProblem(StatusCodes.Status404NotFound)
             .WithSummary("Get product by id")
             .WithDescription("Get product by id");
