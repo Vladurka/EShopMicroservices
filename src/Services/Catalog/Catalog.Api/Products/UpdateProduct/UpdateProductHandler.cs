@@ -3,6 +3,19 @@
     public record UpdateProductCommand(Guid Id, string Name, List<string> Category, string Description, string ImageFile, decimal Price)
     : ICommand<UpdateProductResult>;
     public record UpdateProductResult(bool IsSuccessFul);
+
+    public class UpdateProductCommandValidator : AbstractValidator<UpdateProductCommand>
+    {
+        public UpdateProductCommandValidator()
+        {
+            RuleFor(x => x.Id).NotEmpty();
+            RuleFor(x => x.Name).NotEmpty().Length(2, 50);
+            RuleFor(x => x.Category).NotEmpty();
+            RuleFor(x => x.ImageFile).NotEmpty();
+            RuleFor(x => x.Price).GreaterThan(0);
+        }
+    }
+
     internal class UpdateProductHandler(IDocumentSession session, ILogger<UpdateProductHandler> logger) 
         : ICommandHandler<UpdateProductCommand, UpdateProductResult>
     {
@@ -13,7 +26,7 @@
             var product = await session.LoadAsync<Product>(command.Id, cancellationToken);
 
             if (product is null)
-                throw new ProductNotFoundException();
+                throw new ProductNotFoundException(command.Id);
 
             product.Name = command.Name;
             product.Category = command.Category;
