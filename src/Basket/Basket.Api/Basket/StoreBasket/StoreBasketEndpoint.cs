@@ -1,26 +1,27 @@
-﻿using FluentValidation;
-
-namespace Basket.Api.Basket.StoreBasket
+﻿namespace Basket.Api.Basket.StoreBasket
 {
-    public record StoreBasketCommand(ShoppingCart Cart) : ICommand<StoreBasketResult>;
-    public record StoreBasketResult(bool IsSuccessful);
+    public record StoreBasketRequest(ShoppingCart Cart);
+    public record StoreBasketResponse(Guid Id);
 
-    public class StoreBasketCommandValidator : AbstractValidator<StoreBasketCommand>
+    public class StoreBasketEndpoint : ICarterModule
     {
-        public StoreBasketCommandValidator()
+        public void AddRoutes(IEndpointRouteBuilder app)
         {
-            RuleFor(x => x.Cart).NotNull().WithMessage("Cart can not be null");
-            RuleFor(x => x.Cart.Id).NotEmpty().WithMessage("Id is required");
-        }
-    }
+            app.MapPost("/basket", async (StoreBasketRequest request, ISender sender) =>
+            {
+                var command = request.Adapt<StoreBasketCommand>();
 
-    public class StoreBasketCommandHandler
-        : ICommandHandler<StoreBasketCommand, StoreBasketResult>
-    {
-        public async Task<StoreBasketResult> Handle(StoreBasketCommand command, CancellationToken cancellationToken)
-        {
-            ShoppingCart cart = command.Cart;
-            return new StoreBasketResult(true);
+                var result = await sender.Send(command);
+
+                var response = result.Adapt<StoreBasketResponse>();
+
+                return Results.Created($"/basket/{response.Id}", response);
+            })
+            .WithName("CreateBasket")
+            .Produces<StoreBasketResponse>(StatusCodes.Status201Created)
+            .ProducesProblem(StatusCodes.Status400BadRequest)
+            .WithSummary("Create Basket")
+            .WithDescription("Create Basket");
         }
     }
 }
