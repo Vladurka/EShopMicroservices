@@ -2,13 +2,13 @@
 {
     public class ShoppingCart
     {
-        public Guid Id { get; set; }
+        public string UserName { get; set; } = string.Empty;
         public IEnumerable<ShoppingCartItem> Items { get; set; } = new List<ShoppingCartItem>();
         public decimal TotalPrice => Items.Sum(x => x.Price * x.Quantity);
 
-        public ShoppingCart(Guid id)
+        public ShoppingCart(string userName)
         {
-            Id = id;
+            UserName = userName;
         }
 
         public ShoppingCart(){ }

@@ -1,13 +1,13 @@
 ﻿namespace Basket.Api.Basket.DeleteBasket
 {
-    public record DeleteBasketCommand(Guid Id) : ICommand<DeleteBasketResult>;
+    public record DeleteBasketCommand(string UserName) : ICommand<DeleteBasketResult>;
     public record DeleteBasketResult(bool IsSuccessful);
 
     public class DeleteBasketCommandValidator : AbstractValidator<DeleteBasketCommand>
     {
         public DeleteBasketCommandValidator()
         {
-            RuleFor(x => x.Id).NotEmpty().WithMessage("Id is required");
+            RuleFor(x => x.UserName).NotEmpty().WithMessage("Id is required");
         }
     }
 

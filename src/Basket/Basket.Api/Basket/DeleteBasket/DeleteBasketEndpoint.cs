@@ -6,9 +6,9 @@
     {
         public void AddRoutes(IEndpointRouteBuilder app)
         {
-            app.MapDelete("/basket/{id : Guid}", async (Guid id, ISender sender) =>
+            app.MapDelete("/basket/{UserName}", async (string userName, ISender sender) =>
             {
-                var result = await sender.Send(new DeleteBasketCommand(id));
+                var result = await sender.Send(new DeleteBasketCommand(userName));
 
                 var response = result.Adapt<DeleteBasketResponse>();
 
