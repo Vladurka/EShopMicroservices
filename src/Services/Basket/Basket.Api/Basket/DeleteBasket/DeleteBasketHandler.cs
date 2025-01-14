@@ -1,9 +1,7 @@
-﻿using Basket.Api.Data;
-
-namespace Basket.Api.Basket.DeleteBasket
+﻿namespace Basket.Api.Basket.DeleteBasket
 {
     public record DeleteBasketCommand(string UserName) : ICommand<DeleteBasketResult>;
-    public record DeleteBasketResult(bool IsSuccess);
+    public record DeleteBasketResult(bool IsSuccessful);
 
     public class DeleteBasketCommandValidator : AbstractValidator<DeleteBasketCommand>
     {
