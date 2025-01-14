@@ -1,0 +1,28 @@
+services:
+  basketdb:
+    image: postgres:latest
+    container_name: basketdb
+    ports:
+      - "5435:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: BasketDb
+    volumes:
+      - basket_data:/var/lib/postgresql/data
+
+  catalogdb:
+    image: postgres:latest
+    container_name: catalogdb
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: CatalogDb
+    volumes:
+      - catalog_data:/var/lib/postgresql/data
+
+volumes:
+  basket_data:
+  catalog_data:
