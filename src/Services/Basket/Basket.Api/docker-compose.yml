@@ -1,16 +1,15 @@
 ﻿services:
-  catalogdb:
+  basketdb:
     image: postgres:latest
-    container_name: catalogdb
+    container_name: basketdb
     ports:
-      - "5433:5432"
+      - "5435:5432"
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: CatalogDb
+      POSTGRES_DB: BasketDb
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
 volumes:
   postgres_data:
-
