@@ -9,8 +9,29 @@
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: CatalogDb
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - catalogdb_data:/var/lib/postgresql/data
+   
+  basketdb:
+    image: postgres:latest
+    container_name: basketdb
+    ports:
+      - "5435:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: BasketDb
+    volumes:
+      - basketdb_data:/var/lib/postgresql/data
+   
+  basketRedis:
+    image: redis:latest
+    ports:
+      - "6382:6379"
+    volumes:
+      - "basketRedis-data:/data"
 
 volumes:
-  postgres_data:
+  catalogdb_data:
+  basketdb_data:
+  basketRedis-data:
 
