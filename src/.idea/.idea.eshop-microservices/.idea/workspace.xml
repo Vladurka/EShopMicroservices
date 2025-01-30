@@ -18,14 +18,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f71a11af-835e-4c7e-bdad-196a2fde3511" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Services/Discount/Discount.Grpc/Data/DiscountContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/Discount/Discount.Grpc/Services/DiscountService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.eshop-microservices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.eshop-microservices/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Catalog/Catalog.Api/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Catalog/Catalog.Api/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Discount/Discount.Grpc/Data/DiscountContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Discount/Discount.Grpc/Data/DiscountContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Services/Discount/Discount.Grpc/Discount.Grpc.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Discount/Discount.Grpc/Discount.Grpc.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Discount/Discount.Grpc/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Discount/Discount.Grpc/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Discount/Discount.Grpc/Protos/greet.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Discount/Discount.Grpc/Services/GreeterService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Discount/Discount.Grpc/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Discount/Discount.Grpc/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Discount/Discount.Grpc/Models/Coupon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Discount/Discount.Grpc/Models/Coupon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Discount/Discount.Grpc/Services/DiscountService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Discount/Discount.Grpc/Services/DiscountService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,6 +240,8 @@
       <workItem from="1737572470807" duration="145000" />
       <workItem from="1738165870400" duration="2132000" />
       <workItem from="1738252450374" duration="98000" />
+      <workItem from="1738253022387" duration="866000" />
+      <workItem from="1738254071756" duration="1135000" />
     </task>
     <servers />
   </component>
