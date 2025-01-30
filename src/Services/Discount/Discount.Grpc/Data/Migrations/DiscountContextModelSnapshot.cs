@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace Discount.Grpc.Migrations
+namespace Discount.Grpc.Data.Migrations
 {
     [DbContext(typeof(DiscountContext))]
     partial class DiscountContextModelSnapshot : ModelSnapshot
@@ -33,6 +33,20 @@ namespace Discount.Grpc.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Coupons");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Description = "IPhone Discount",
+                            Name = "IPhone X"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Description = "Samsung Discount",
+                            Name = "Samsung 10"
+                        });
                 });
 #pragma warning restore 612, 618
         }

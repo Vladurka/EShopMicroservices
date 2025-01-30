@@ -7,10 +7,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace Discount.Grpc.Migrations
+namespace Discount.Grpc.Data.Migrations
 {
     [DbContext(typeof(DiscountContext))]
-    [Migration("20250130160257_Initial")]
+    [Migration("20250130161048_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -36,6 +36,20 @@ namespace Discount.Grpc.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Coupons");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Description = "IPhone Discount",
+                            Name = "IPhone X"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Description = "Samsung Discount",
+                            Name = "Samsung 10"
+                        });
                 });
 #pragma warning restore 612, 618
         }
