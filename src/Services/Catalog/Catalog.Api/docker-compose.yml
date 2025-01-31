@@ -31,17 +31,23 @@
       - "basketRedis-data:/data"
 
   discountdb:
-    image: alpine  
+    image: postgres:latest
     container_name: discountdb
+    restart: unless-stopped
+    ports:
+      - "5438:5432"
+    environment:
+        POSTGRES_USER: postgres
+        POSTGRES_PASSWORD: postgres
+        POSTGRES_DB: DiscountDb
+        PGDATA: /var/lib/postgresql/data/pgdata
     volumes:
-      - discountdb_data:/app/data
-    command: [ "sh", "-c", "while true; do sleep 3600; done" ]
-
-
+      - discountdb_data:/var/lib/postgresql/data
 
 volumes:
   catalogdb_data:
   basketdb_data:
   basketRedis-data:
   discountdb_data:
+
 

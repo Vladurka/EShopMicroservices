@@ -13,12 +13,12 @@ public class DiscountService(DiscountContext dbContext, ILogger<DiscountService>
     {
         var coupon = await dbContext
             .Coupons
-            .FirstOrDefaultAsync(x => x.Name == request.ProductName);
+            .FirstOrDefaultAsync(x => x.ProductName == request.ProductName);
 
         if (coupon is null)
             coupon = new Coupon("No discount", "No description", 0);
 
-        logger.LogInformation("Discount is retrieved for name : {productName}, amount : {amount}", coupon.Name, coupon.Amount);
+        logger.LogInformation("Discount is retrieved for name : {productName}, amount : {amount}", coupon.ProductName, coupon.Amount);
 
         var couponModel = coupon.Adapt<CouponModel>();
         return couponModel;
@@ -33,7 +33,7 @@ public class DiscountService(DiscountContext dbContext, ILogger<DiscountService>
         dbContext.Coupons.Add(coupon);
         await dbContext.SaveChangesAsync();
 
-        logger.LogInformation("Discount is successfully created. Name : {ProductName}", coupon.Name);
+        logger.LogInformation("Discount is successfully created. Name : {ProductName}", coupon.ProductName);
 
         var couponModel = coupon.Adapt<CouponModel>();
         return couponModel;
@@ -49,7 +49,7 @@ public class DiscountService(DiscountContext dbContext, ILogger<DiscountService>
         dbContext.Coupons.Update(coupon);
         await dbContext.SaveChangesAsync();
 
-        logger.LogInformation("Discount is successfully updated. Name: {ProductName}", coupon.Name);
+        logger.LogInformation("Discount is successfully updated. Name: {ProductName}", coupon.ProductName);
 
         var couponModel = coupon.Adapt<CouponModel>();
         return couponModel;
@@ -59,7 +59,7 @@ public class DiscountService(DiscountContext dbContext, ILogger<DiscountService>
     {
         var coupon = await dbContext
             .Coupons
-            .FirstOrDefaultAsync(x => x.Name == request.ProductName);
+            .FirstOrDefaultAsync(x => x.ProductName == request.ProductName);
 
         if (coupon is null)
             throw new RpcException(new Status(StatusCode.NotFound, $"Discount with name = {request.ProductName} is not found."));

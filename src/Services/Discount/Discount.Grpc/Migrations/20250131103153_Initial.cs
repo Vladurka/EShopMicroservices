@@ -1,10 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
+using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
 #pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
 
-namespace Discount.Grpc.Data.Migrations
+namespace Discount.Grpc.Migrations
 {
     /// <inheritdoc />
     public partial class Initial : Migration
@@ -16,10 +17,10 @@ namespace Discount.Grpc.Data.Migrations
                 name: "Coupons",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "INTEGER", nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
-                    Name = table.Column<string>(type: "TEXT", nullable: false),
-                    Description = table.Column<string>(type: "TEXT", nullable: false)
+                    Id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    ProductName = table.Column<string>(type: "text", nullable: false),
+                    Description = table.Column<string>(type: "text", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -28,7 +29,7 @@ namespace Discount.Grpc.Data.Migrations
 
             migrationBuilder.InsertData(
                 table: "Coupons",
-                columns: new[] { "Id", "Description", "Name" },
+                columns: new[] { "Id", "Description", "ProductName" },
                 values: new object[,]
                 {
                     { 1, "IPhone Discount", "IPhone X" },

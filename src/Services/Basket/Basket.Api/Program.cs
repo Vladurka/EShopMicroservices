@@ -1,3 +1,4 @@
+using Discount.Grpc;
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 
@@ -29,6 +30,10 @@ builder.Services.AddStackExchangeRedisCache(options =>
 builder.Services.AddScoped<IBasketRepository, BasketRepository>();
 builder.Services.Decorate<IBasketRepository, CacheBasketRepository>();
 
+builder.Services.AddGrpcClient<DiscountProtoService.DiscountProtoServiceClient>(opts =>
+{
+    opts.Address = new Uri(builder.Configuration["GrpcSettings:DiscountUrl"]!);
+});
 
 builder.Services.AddExceptionHandler<CustomExceptionHandler>();
 

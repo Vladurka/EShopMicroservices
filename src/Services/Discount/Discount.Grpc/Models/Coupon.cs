@@ -3,7 +3,7 @@
     public class Coupon
     {
         public int Id { get; set; }
-        public string Name { get; set; } = string.Empty;
+        public string ProductName { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
         public int Amount;
 
@@ -12,14 +12,14 @@
         public Coupon(int id, string name, string description, int amount)
         {
             Id = id;
-            Name = name;
+            ProductName = name;
             Description = description;
             Amount = amount;
         }
         
         public Coupon(string name, string description, int amount)
         {
-            Name = name;
+            ProductName = name;
             Description = description;
             Amount = amount;
         }

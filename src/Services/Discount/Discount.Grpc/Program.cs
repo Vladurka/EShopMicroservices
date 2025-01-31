@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddGrpc();
 
 builder.Services.AddDbContext<DiscountContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("Database")));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("PostgresConnection")));
 
 var app = builder.Build();
 
