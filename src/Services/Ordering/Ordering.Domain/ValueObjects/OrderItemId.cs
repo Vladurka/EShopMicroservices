@@ -1,4 +1,4 @@
-namespace Ordering.Core.ValueObjects;
+namespace Ordering.Domain.ValueObjects;
 
 public record OrderItemId
 {
