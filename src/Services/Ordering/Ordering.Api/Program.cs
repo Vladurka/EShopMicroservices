@@ -1,6 +1,7 @@
 using Ordering.Application;
 using Ordering.Infrastructure;
 using Ordering.Api;
+using Ordering.Infrastructure.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 

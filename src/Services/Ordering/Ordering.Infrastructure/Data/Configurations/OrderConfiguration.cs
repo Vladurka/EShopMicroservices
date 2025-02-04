@@ -1,9 +1,3 @@
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Ordering.Domain.Enums;
-using Ordering.Domain.Models;
-using Ordering.Domain.ValueObjects;
-
 namespace Ordering.Infrastructure.Data.Configurations;
 
 public class OrderConfiguration : IEntityTypeConfiguration<Order>
@@ -29,6 +23,7 @@ public class OrderConfiguration : IEntityTypeConfiguration<Order>
             o => o.OrderName, nameBuilder =>
             {
                 nameBuilder.Property(n => n.Value)
+                    .HasColumnName(nameof(Order.OrderName))
                     .HasMaxLength(100)
                     .IsRequired();
             });
@@ -90,7 +85,7 @@ public class OrderConfiguration : IEntityTypeConfiguration<Order>
                   .HasMaxLength(5)
                   .IsRequired();
           });
-                                                    
+
         builder.ComplexProperty(
                o => o.Payment, paymentBuilder =>
                {
@@ -109,8 +104,9 @@ public class OrderConfiguration : IEntityTypeConfiguration<Order>
 
                    paymentBuilder.Property(p => p.PaymentMethod);
                });
-        
+
         builder.Property(o => o.Status)
+            .HasDefaultValue(OrderStatus.Draft)
             .HasConversion(
                 s => s.ToString(),
                 dbStatus => (OrderStatus)Enum.Parse(typeof(OrderStatus), dbStatus));
