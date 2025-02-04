@@ -21,35 +21,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f71a11af-835e-4c7e-bdad-196a2fde3511" name="Changes" comment="Odering.Core Models Adding">
-      <change afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Domain/Events/Orders/OrderCreatedEvent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Domain/Events/Orders/OrderUpdatedEvent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Domain/GlobalUsings.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Domain/Models/Order.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.eshop-microservices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.eshop-microservices/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Application/Ordering.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Application/Ordering.Application.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Core/Abstractions/Aggreagate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Domain/Abstractions/Aggreagate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Core/Abstractions/Entity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Domain/Abstractions/Entity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Core/Abstractions/IAggregate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Domain/Abstractions/IAggregate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Core/Abstractions/IDomainEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Domain/Abstractions/IDomainEvent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Core/Abstractions/IEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Domain/Abstractions/IEntity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Core/Enums/OrderStatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Domain/Enums/OrderStatus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Core/Exceptions/DomainException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Domain/Exceptions/DomainException.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Core/GlobalUsings.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Core/Models/Customer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Domain/Models/Customer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Core/Models/Order.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Core/Models/OrderItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Domain/Models/OrderItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Core/Models/Product.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Domain/Models/Product.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Core/Ordering.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Domain/Ordering.Domain.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Core/ValueObjects/Address.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Domain/ValueObjects/Address.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Core/ValueObjects/CustomerId.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Domain/ValueObjects/CustomerId.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Core/ValueObjects/OrderId.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Domain/ValueObjects/OrderId.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Core/ValueObjects/OrderItemId.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Domain/ValueObjects/OrderItemId.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Core/ValueObjects/OrderName.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Domain/ValueObjects/OrderName.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Core/ValueObjects/Payment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Domain/ValueObjects/Payment.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Core/ValueObjects/ProductId.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Domain/ValueObjects/ProductId.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eshop-microservices.sln" beforeDir="false" afterPath="$PROJECT_DIR$/eshop-microservices.sln" afterDir="false" />
-    </list>
+    <list default="true" id="f71a11af-835e-4c7e-bdad-196a2fde3511" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -344,7 +316,7 @@
       <workItem from="1738504436413" duration="851000" />
       <workItem from="1738505570968" duration="50000" />
       <workItem from="1738505741215" duration="27000" />
-      <workItem from="1738597515175" duration="4002000" />
+      <workItem from="1738597515175" duration="4071000" />
     </task>
     <task id="LOCAL-00001" summary="DDD Abstractions">
       <option name="closed" value="true" />
@@ -362,7 +334,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738600650139</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Ordering.Core Finished">
+      <option name="closed" value="true" />
+      <created>1738601611650</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1738601611650</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,6 +365,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="DDD Abstractions" />
     <MESSAGE value="Odering.Core Models Adding" />
-    <option name="LAST_COMMIT_MESSAGE" value="Odering.Core Models Adding" />
+    <MESSAGE value="Ordering.Core Finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ordering.Core Finished" />
   </component>
 </project>

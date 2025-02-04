@@ -1,6 +1,6 @@
 namespace Ordering.Domain.Models;
 
-public class Order : Aggreagate<OrderId>
+public class Order : Aggregate<OrderId>
 {
     private readonly List<OrderItem> _orderItems = new();
     public IReadOnlyList<OrderItem> OrderItems => _orderItems.AsReadOnly();
@@ -10,7 +10,7 @@ public class Order : Aggreagate<OrderId>
     public Address ShippingAddress { get; private set; }
     public Address BillingAddress { get; private set; }
     public Payment Payment { get; private set; }
-    public OrderStatus Status { get; private set; } = OrderStatus.Pending;
+    public OrderStatus Status { get; private set; } = OrderStatus.Draft;
     
     public decimal TotalPrice { 
         get => OrderItems.Sum(x => x.Price * x.Quantity);
