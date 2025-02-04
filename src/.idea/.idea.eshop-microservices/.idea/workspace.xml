@@ -21,13 +21,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f71a11af-835e-4c7e-bdad-196a2fde3511" name="Changes" comment="Ordering Db Fix">
+    <list default="true" id="f71a11af-835e-4c7e-bdad-196a2fde3511" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.eshop-microservices/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.eshop-microservices/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.eshop-microservices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.eshop-microservices/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Catalog/Catalog.Api/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Catalog/Catalog.Api/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Api/Ordering.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Api/Ordering.Api.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Api/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Domain/Models/Order.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Domain/Models/Order.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/GlobalUsings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/GlobalUsings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/Data/Migrations/OrderingDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/Data/Migrations/OrderingDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/DependencyInjection.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -332,7 +330,7 @@
       <workItem from="1738597515175" duration="4071000" />
       <workItem from="1738690694598" duration="2719000" />
       <workItem from="1738694170041" duration="276000" />
-      <workItem from="1738695694801" duration="2005000" />
+      <workItem from="1738695694801" duration="2360000" />
     </task>
     <task id="LOCAL-00001" summary="DDD Abstractions">
       <option name="closed" value="true" />
@@ -366,7 +364,23 @@
       <option name="project" value="LOCAL" />
       <updated>1738696147218</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="sql server setup">
+      <option name="closed" value="true" />
+      <created>1738697743162</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1738697743162</updated>
+    </task>
+    <task id="LOCAL-00006" summary="dada">
+      <option name="closed" value="true" />
+      <created>1738697757104</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1738697757104</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -391,6 +405,8 @@
     <MESSAGE value="Odering.Core Models Adding" />
     <MESSAGE value="Ordering.Core Finished" />
     <MESSAGE value="Ordering Db Fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ordering Db Fix" />
+    <MESSAGE value="sql server setup" />
+    <MESSAGE value="dada" />
+    <option name="LAST_COMMIT_MESSAGE" value="dada" />
   </component>
 </project>
