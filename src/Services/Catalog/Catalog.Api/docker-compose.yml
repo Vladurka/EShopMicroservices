@@ -43,11 +43,24 @@
         PGDATA: /var/lib/postgresql/data/pgdata
     volumes:
       - discountdb_data:/var/lib/postgresql/data
+        
+  orderdb:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: orderdb
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=SwN12345678
+    restart: always
+    ports:
+      - "1433:1433"
+    volumes:
+      - orderdb_data:/var/opt/mssql
 
 volumes:
   catalogdb_data:
   basketdb_data:
   basketRedis-data:
   discountdb_data:
+  orderdb_data:
 
 

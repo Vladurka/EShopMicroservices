@@ -21,17 +21,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f71a11af-835e-4c7e-bdad-196a2fde3511" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/GlobalUsings.cs" afterDir="false" />
+    <list default="true" id="f71a11af-835e-4c7e-bdad-196a2fde3511" name="Changes" comment="Ordering Db Fix">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.eshop-microservices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.eshop-microservices/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Api/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/Data/ApplicationDbContext.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/Data/Configurations/CustomerConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/Data/Configurations/CustomerConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/Data/Configurations/OrderConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/Data/Configurations/OrderConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/Data/Configurations/OrderItemConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/Data/Configurations/OrderItemConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/Data/Configurations/ProductConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/Data/Configurations/ProductConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/DependencyInjection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/Ordering.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/Ordering.Infrastructure.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Catalog/Catalog.Api/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Catalog/Catalog.Api/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Api/Ordering.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Api/Ordering.Api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Api/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Domain/Models/Order.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Domain/Models/Order.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/GlobalUsings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/GlobalUsings.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,23 +68,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.Discount.Grpc: https.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.C#&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.Discount.Grpc: https.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.C#",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "redis",
+      "postgresql"
+    ]
   }
-}</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.Discount.Grpc: https">
+}]]></component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.Ordering.Api: https">
     <configuration name="Basket.Api: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Services/Basket/Basket.Api/Basket.Api.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
@@ -330,7 +332,7 @@
       <workItem from="1738597515175" duration="4071000" />
       <workItem from="1738690694598" duration="2719000" />
       <workItem from="1738694170041" duration="276000" />
-      <workItem from="1738695694801" duration="330000" />
+      <workItem from="1738695694801" duration="2005000" />
     </task>
     <task id="LOCAL-00001" summary="DDD Abstractions">
       <option name="closed" value="true" />
@@ -356,7 +358,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738601611650</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Ordering Db Fix">
+      <option name="closed" value="true" />
+      <created>1738696147218</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1738696147218</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,6 +390,7 @@
     <MESSAGE value="DDD Abstractions" />
     <MESSAGE value="Odering.Core Models Adding" />
     <MESSAGE value="Ordering.Core Finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ordering.Core Finished" />
+    <MESSAGE value="Ordering Db Fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ordering Db Fix" />
   </component>
 </project>
