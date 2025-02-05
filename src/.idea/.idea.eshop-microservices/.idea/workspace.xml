@@ -22,10 +22,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f71a11af-835e-4c7e-bdad-196a2fde3511" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.eshop-microservices/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.eshop-microservices/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/Data/Interceptors/AuditableEntityInterceptors.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/Data/Interceptors/DispatchDomainEventsInterceptor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.eshop-microservices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.eshop-microservices/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/Data/Migrations/OrderingDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/Data/Migrations/OrderingDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Domain/Abstractions/Entity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Domain/Abstractions/Entity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Domain/Abstractions/IDomainEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Domain/Abstractions/IDomainEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Domain/Abstractions/IEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Domain/Abstractions/IEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Domain/ValueObjects/OrderName.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Domain/ValueObjects/OrderName.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/Data/Extensions/InitialData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/Data/Extensions/InitialData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/DependencyInjection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/GlobalUsings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/GlobalUsings.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +58,9 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/225dd19ef9e59a5b94de2bcd4b7b38cdca205bdfea4a7361ed03c5f79a36/INotification.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2df1cb93afb48b1297d43df915649e6d5be268d246dc8abfded10b752553/EntityEntry.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/WebApi/EShopMicroservices/src/Services/Ordering/Ordering.Api/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/WebApi/EShopMicroservices/src/Services/Ordering/Ordering.Domain/ValueObjects/OrderName.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -66,28 +75,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.Discount.Grpc: https.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.C#",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.Discount.Grpc: https.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Ordering.Api: https.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.C#&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "redis",
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;redis&quot;,
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Ordering.Api: https">
     <configuration name="Basket.Api: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Services/Basket/Basket.Api/Basket.Api.csproj" />
@@ -331,6 +341,9 @@
       <workItem from="1738690694598" duration="2719000" />
       <workItem from="1738694170041" duration="276000" />
       <workItem from="1738695694801" duration="2360000" />
+      <workItem from="1738775527844" duration="3224000" />
+      <workItem from="1738780861983" duration="127000" />
+      <workItem from="1738781022758" duration="296000" />
     </task>
     <task id="LOCAL-00001" summary="DDD Abstractions">
       <option name="closed" value="true" />
@@ -380,7 +393,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738697757104</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="AutoMigrate And DataSeed">
+      <option name="closed" value="true" />
+      <created>1738780052264</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1738780052264</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,6 +428,7 @@
     <MESSAGE value="Ordering Db Fix" />
     <MESSAGE value="sql server setup" />
     <MESSAGE value="dada" />
-    <option name="LAST_COMMIT_MESSAGE" value="dada" />
+    <MESSAGE value="AutoMigrate And DataSeed" />
+    <option name="LAST_COMMIT_MESSAGE" value="AutoMigrate And DataSeed" />
   </component>
 </project>
