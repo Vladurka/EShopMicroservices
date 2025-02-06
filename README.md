@@ -11,7 +11,7 @@ This project is an online store developed using a microservices architecture on 
 ## 🏗️ Technologies
 The project uses modern technologies:
 - **Backend:** .NET 8 (ASP.NET Core Web API)
-- **Database:** PostgreSQL, Marten, SQL Server Redis
+- **Database:** PostgreSQL, Marten, SQL Server, Redis
 - **API Gateway:** Ocelot
 - **Containerization:** Docker
 - **Messaging:** RabbitMQ
