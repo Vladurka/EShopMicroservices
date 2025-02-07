@@ -21,28 +21,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f71a11af-835e-4c7e-bdad-196a2fde3511" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Application/Data/IOrderingDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Application/Dtos/AddressDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Application/Dtos/OrderDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Application/Dtos/OrderItemDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Application/Dtos/PaymentDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Application/Exceptions/OrderNotFoundException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Application/GlobalUsing.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Application/Orders/Commands/CreateOrder/CreateOrderCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Application/Orders/Commands/CreateOrder/CreateOrderHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Application/Orders/Commands/DeleteOrder/DeleteOrderCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Application/Orders/Commands/DeleteOrder/DeleteOrderHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Application/Orders/Commands/UpdateOrder/UpdateOrderCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Application/Orders/Commands/UpdateOrder/UpdateOrderHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.eshop-microservices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.eshop-microservices/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Application/Ordering.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Application/Ordering.Application.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Domain/GlobalUsings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Domain/GlobalUsing.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/Data/Interceptors/DispatchDomainEventsInterceptor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/Data/Interceptors/DispatchDomainEventsInterceptor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/Data/OrderingDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/Data/OrderingDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/DependencyInjection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/GlobalUsings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Infrastructure/GlobalUsing.cs" afterDir="false" />
-    </list>
+    <list default="true" id="f71a11af-835e-4c7e-bdad-196a2fde3511" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -355,7 +334,7 @@
       <workItem from="1738780861983" duration="127000" />
       <workItem from="1738781022758" duration="824000" />
       <workItem from="1738857822641" duration="88000" />
-      <workItem from="1738857928673" duration="3610000" />
+      <workItem from="1738857928673" duration="3921000" />
     </task>
     <task id="LOCAL-00001" summary="DDD Abstractions">
       <option name="closed" value="true" />
@@ -421,7 +400,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738781676180</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Ordering Commands Added">
+      <option name="closed" value="true" />
+      <created>1738863045813</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1738863045813</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -450,6 +437,7 @@
     <MESSAGE value="dada" />
     <MESSAGE value="AutoMigrate And DataSeed" />
     <MESSAGE value="Ordering.Infrastructure End" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ordering.Infrastructure End" />
+    <MESSAGE value="Ordering Commands Added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ordering Commands Added" />
   </component>
 </project>
