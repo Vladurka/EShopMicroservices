@@ -21,7 +21,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f71a11af-835e-4c7e-bdad-196a2fde3511" name="Changes" comment="" />
+    <list default="true" id="f71a11af-835e-4c7e-bdad-196a2fde3511" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Api/Endpoints/CreateOrder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Api/Endpoints/DeleteOrder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Api/Endpoints/GetOrders.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Api/Endpoints/GetOrdersByCustomer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Api/Endpoints/GetOrdersByName.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Api/Endpoints/UpdateOrder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Api/GlobalUsing.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.eshop-microservices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.eshop-microservices/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Api/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Api/DependencyInjection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Api/Ordering.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Api/Ordering.Api.csproj" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -335,6 +346,8 @@
       <workItem from="1738781022758" duration="824000" />
       <workItem from="1738857822641" duration="88000" />
       <workItem from="1738857928673" duration="3921000" />
+      <workItem from="1738947773645" duration="2021000" />
+      <workItem from="1739002730383" duration="2108000" />
     </task>
     <task id="LOCAL-00001" summary="DDD Abstractions">
       <option name="closed" value="true" />
@@ -408,7 +421,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738863045813</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Ordering.Application End">
+      <option name="closed" value="true" />
+      <created>1738949801074</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1738949801074</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -438,6 +459,7 @@
     <MESSAGE value="AutoMigrate And DataSeed" />
     <MESSAGE value="Ordering.Infrastructure End" />
     <MESSAGE value="Ordering Commands Added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ordering Commands Added" />
+    <MESSAGE value="Ordering.Application End" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ordering.Application End" />
   </component>
 </project>
