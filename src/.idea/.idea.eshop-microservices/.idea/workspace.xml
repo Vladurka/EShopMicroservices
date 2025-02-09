@@ -22,16 +22,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f71a11af-835e-4c7e-bdad-196a2fde3511" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Api/Endpoints/CreateOrder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Api/Endpoints/DeleteOrder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Api/Endpoints/GetOrders.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Api/Endpoints/GetOrdersByCustomer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Api/Endpoints/GetOrdersByName.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Api/Endpoints/UpdateOrder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Api/GlobalUsing.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Basket/Basket.Api/Basket/CheckoutBaasket/CheckoutBasketEndpoints.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Basket/Basket.Api/Basket/CheckoutBaasket/CheckoutBasketHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Basket/Basket.Api/Dtos/BasketCheckoutDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Application/Orders/EventHandlers/Integration/BasketCheckoutEventHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.eshop-microservices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.eshop-microservices/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Api/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Api/DependencyInjection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Api/Ordering.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Api/Ordering.Api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildingBlocks/BuildingBlocks/BuildingBlocks.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BuildingBlocks/BuildingBlocks/BuildingBlocks.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Basket/Basket.Api/Basket.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Basket/Basket.Api/Basket.Api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Basket/Basket.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Basket/Basket.Api/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Catalog/Catalog.Api/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Api/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Api/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Application/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Application/DependencyInjection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Application/Ordering.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Application/Ordering.Application.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Application/Orders/EventHandlers/OrderCreatedEventHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Application/Orders/EventHandlers/Domain/OrderCreatedEventHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Ordering/Ordering.Application/Orders/EventHandlers/OrderUpdatedEventHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Ordering/Ordering.Application/Orders/EventHandlers/Domain/OrderUpdatedEventHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eshop-microservices.sln" beforeDir="false" afterPath="$PROJECT_DIR$/eshop-microservices.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,8 +66,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/225dd19ef9e59a5b94de2bcd4b7b38cdca205bdfea4a7361ed03c5f79a36/INotification.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2df1cb93afb48b1297d43df915649e6d5be268d246dc8abfded10b752553/EntityEntry.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/WebApi/EShopMicroservices/src/Services/Ordering/Ordering.Api/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/WebApi/EShopMicroservices/src/Services/Ordering/Ordering.Domain/ValueObjects/OrderName.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/WebApi/EShopMicroservices/src/Services/Basket/Basket.Api/appsettings.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -348,6 +354,8 @@
       <workItem from="1738857928673" duration="3921000" />
       <workItem from="1738947773645" duration="2021000" />
       <workItem from="1739002730383" duration="2108000" />
+      <workItem from="1739111147667" duration="4538000" />
+      <workItem from="1739116253877" duration="156000" />
     </task>
     <task id="LOCAL-00001" summary="DDD Abstractions">
       <option name="closed" value="true" />
@@ -429,7 +437,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738949801074</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Building.Blocks Messaging">
+      <option name="closed" value="true" />
+      <created>1739112668388</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1739112668388</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -460,6 +476,7 @@
     <MESSAGE value="Ordering.Infrastructure End" />
     <MESSAGE value="Ordering Commands Added" />
     <MESSAGE value="Ordering.Application End" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ordering.Application End" />
+    <MESSAGE value="Building.Blocks Messaging" />
+    <option name="LAST_COMMIT_MESSAGE" value="Building.Blocks Messaging" />
   </component>
 </project>
