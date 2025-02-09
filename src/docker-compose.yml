@@ -69,6 +69,7 @@
       - "15672:15672"
   
   catalog.api:
+    image: ${DOCKER_REGISTRY-}catalogapi
     build:
       context: .
       dockerfile: Services/Catalog/Catalog.Api/Dockerfile
@@ -76,7 +77,7 @@
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_HTTP_PORTS=8080
       - ASPNETCORE_HTTPS_PORTS=8081
-      - ConnectionStrings__PostgresConnection=Server=catalogdb;Port=5432;Database=CatalogDb;User Id=postgres;Password=postgres;Include Error Detail=true
+      - ConnectionStrings__PostgresConnection=Server=catalogdb;Port=5432;Database=CatalogDb;User Id=postgres;Password=postgres
     depends_on:
       - catalogdb
     ports:
@@ -85,8 +86,9 @@
     volumes:
       - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
       - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
-
+  
   basket.api:
+    image: ${DOCKER_REGISTRY-}basketapi
     build:
       context: .
       dockerfile: Services/Basket/Basket.Api/Dockerfile
@@ -113,6 +115,7 @@
       - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
 
   discount.grpc:
+    image: ${DOCKER_REGISTRY-}discountgrpc
     build:
       context: .
       dockerfile: Services/Discount/Discount.Grpc/Dockerfile
@@ -131,6 +134,7 @@
       - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
 
   ordering.api:
+    image: ${DOCKER_REGISTRY-}orderingapi
     build:
       context: .
       dockerfile: Services/Ordering/Ordering.Api/Dockerfile
@@ -154,6 +158,7 @@
       - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
 
   yarpapigateway:
+    image: ${DOCKER_REGISTRY-}yarpapigateway
     build:
       context: .
       dockerfile: ApiGateways/YarpApiGateway/Dockerfile
