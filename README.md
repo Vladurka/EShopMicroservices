@@ -12,15 +12,15 @@ This project is an online store developed using a microservices architecture on 
 The project uses modern technologies:
 - **Backend:** .NET 8 (ASP.NET Core Web API)
 - **Database:** PostgreSQL, Marten, SQL Server, Redis
-- **API Gateway:** Ocelot
+- **API Gateway:** YARP
 - **Containerization:** Docker
 - **Messaging:** RabbitMQ
 
 ## 📂 Architecture
 The project consists of multiple microservices:
-- **Product Catalog** – managing products and categories
-- **Cart** – storing items added by users
-- **Orders** – processing and managing orders
+- **Product Catalog** – managing products and categories (Vertical slice architecture, CQRS)
+- **Cart** – storing items added by users (Vertical slice architecture, CQRS)
+- **Orders** – processing and managing orders (Clean architecture, CQRS, DDD)
 - **API Gateway** – request routing
 
 ## 🎯 Project Goal
